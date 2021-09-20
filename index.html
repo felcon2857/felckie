@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felcon Albaladejo | FullStack Developer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/boxicons/css/boxicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navigation section -->
+    <header id="header" class="navigation">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="navigation-title" onclick="switchPage('home')">
+            Felcon A.
+          </div>
+          <div class="bg-menu"><i class="bx bx-menu"></i></div>
+          <div class="navigation-links">
+            <a onclick="switchPage('about')">About</a>
+            <a onclick="switchPage('projects')">Projects</a>
+            <a onclick="switchPage('history')">History</a>
+            <a onclick="switchPage('contacts')">Contacts</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- page section -->
+    <div class="container page-sections">
+      <!-- section home landing page -->
+      <section id="home">
+        <div class="row align-items-center vh-100">
+          <div class="col-lg-8">
+            <div class="my-1">
+              <h4 class="up-text">Hello my name is.</h4>
+              <h1 class="title">Felcon A.</h1>
+              <div class="down-text">
+                I build things for the Web
+                <p class="text-white mt-3">
+                  I'm a <span>FullStack Developer</span> base in Negros
+                  Occidental, Philippines. Specializing in building online
+                  digital experience or <span>Website Development</span>.
+                </p>
+              </div>
+
+              <div class="d-flex align-items-center my-3">
+                <button
+                  class="btn-menu"
+                  id="about-menu"
+                  onclick="switchPage('about')"
+                >
+                  <i class="bx bx-folder"></i>&nbsp; About
+                </button>
+                <button
+                  class="mx-3 btn-menu"
+                  id="projects-menu"
+                  onclick="switchPage('projects')"
+                >
+                  <i class="bx bx-folder"></i>&nbsp; Projects
+                </button>
+                <button
+                  class="btn-menu"
+                  id="history-menu"
+                  onclick="switchPage('history')"
+                >
+                  <i class="bx bx-folder"></i>&nbsp; History
+                </button>
+              </div>
+              <div class="d-flex align-items-center my-4">
+                <a
+                  href="https://www.linkedin.com/in/felcon-albaladejo-b60787183/"
+                  class="
+                    d-flex
+                    align-items-center
+                    justify-content-center
+                    icon-style
+                  "
+                >
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com/felcon2857"
+                  class="
+                    d-flex
+                    align-items-center
+                    justify-content-center
+                    icon-style
+                    mx-2
+                  "
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a
+                  href="https://codepen.io/script2to"
+                  class="
+                    d-flex
+                    align-items-center
+                    justify-content-center
+                    icon-style
+                  "
+                >
+                  <i class="bx bxl-codepen"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section about -->
+      <section id="about" class="my-5 vh-100 fade-in-bottom">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4 class="page-text">ABOUT</h4>
+          </div>
+        </div>
+        <div class="row my-2">
+          <div class="col-lg-6 mb-2">
+            <div class="d-flex align-items-center text-cn-info">
+              <span class="d-flex align-items-center">
+                <i class="bx bx-chevron-right"></i>
+                Email:
+              </span>
+              albaladejofelcon31@gamil.com
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center text-cn-info">
+              <span class="d-flex align-items-center">
+                <i class="bx bx-chevron-right"></i>
+                Phone:
+              </span>
+              +639508414224 / +639153526619
+            </div>
+          </div>
+          <div class="col-lg-6 mb-3">
+            <div class="d-flex align-items-center text-cn-info">
+              <span class="d-flex align-items-center">
+                <i class="bx bx-chevron-right"></i>
+                Open for collaboration and Freelance Project.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h5>My Bio</h5>
+              <hr />
+            </div>
+            <p class="text-desc my-2" id="bio_one"></p>
+            <p class="text-desc my-3" id="bio_two"></p>
+          </div>
+        </div>
+        <div class="row my-2">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h5>Tech Stack</h5>
+              <hr />
+            </div>
+            <!-- framework -->
+            <div class="row">
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-react-original colored"></i>
+                  <div>React JS / React Native</div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-vuejs-plain colored"></i>
+                  <div>Vue Js</div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-laravel-plain colored"></i>
+                  <div>Laravel</div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-wordpress-plain"></i>
+                  <div>WordPress</div>
+                </div>
+              </div>
+            </div>
+            <!-- languages -->
+            <div class="row">
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-git-plain colored"></i>
+                  <div>Git / Github</div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-php-plain colored"></i>
+                  <div>PHP</div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-javascript-plain colored"></i>
+                  <div>JavaScript</div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-css3-plain colored"></i>
+                  <div>CSS3 Stylesheet</div>
+                </div>
+              </div>
+            </div>
+            <!-- database -->
+            <div class="row">
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-mysql-plain colored"></i>
+                  <div>MySQL</div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-mongodb-plain colored"></i>
+                  <div>MongoDB</div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-firebase-plain colored"></i>
+                  <div>Firebase</div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-digitalocean-plain colored"></i>
+                  <div>Digital Ocean</div>
+                </div>
+              </div>
+            </div>
+            <!-- others -->
+            <div class="row">
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-amazonwebservices-original colored"></i>
+                  <div>Amazon Web Services</div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-xd-plain colored"></i>
+                  <div>Adobe XD</div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="card-box d-flex align-items-center">
+                  <i class="devicon-photoshop-plain colored"></i>
+                  <div>Adobe Photoshop</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section projects -->
+      <section id="projects" class="vh-100 my-5 fade-in-bottom">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4 class="page-text">PROJECTS</h4>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h5>My Works</h5>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <!-- wordpress projects -->
+        <div class="row">
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="https://nimblerhino.com"
+                  target="_blank"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+              <div class="cp-body my-3">
+                <div class="cp-title">NimbleRhino.com</div>
+                <div class="cp-desc">
+                  The official website of NimbleRhino LLC. Done in WordPress
+                  Page Builder.
+                </div>
+              </div>
+              <div class="cp-footer mt-3">WordPress &#8226; PHP</div>
+            </div>
+          </div>
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="https://nimbletalentz.com"
+                  target="_blank"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+              <div class="cp-body my-3">
+                <div class="cp-title">NimbleTalentz.com</div>
+                <div class="cp-desc">
+                  The partner website of NimbleRhino LLC. Done in WordPress Page
+                  Builder.
+                </div>
+              </div>
+              <div class="cp-footer mt-3">WordPress &#8226; PHP</div>
+            </div>
+          </div>
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="http://nimbleclicks.com"
+                  target="_blank"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+              <div class="cp-body my-3">
+                <div class="cp-title">NimbleClicks.com</div>
+                <div class="cp-desc">
+                  SEO website of NimbleRhino LLC. Done in WordPress Page
+                  Builder.
+                </div>
+              </div>
+              <div class="cp-footer mt-3">WordPress &#8226; PHP</div>
+            </div>
+          </div>
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="https://curvesolar.com"
+                  target="_blank"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+              <div class="cp-body my-3">
+                <div class="cp-title">CurveSolar.com</div>
+                <div class="cp-desc">
+                  Service Compnay for Solar Panel. Done in WordPress Page
+                  Builder.
+                </div>
+              </div>
+              <div class="cp-footer mt-3">WordPress &#8226; PHP</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="https://soundflowerdreams.com/"
+                  target="_blank"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+              <div class="cp-body my-3">
+                <div class="cp-title">Soundflowerdreams.com</div>
+                <div class="cp-desc">
+                  The official website of Soundflower.life. Done in WordPress
+                  Page Builder.
+                </div>
+              </div>
+              <div class="cp-footer mt-3">WordPress &#8226; PHP</div>
+            </div>
+          </div>
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="https://esmartfactory.net/"
+                  target="_blank"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+              <div class="cp-body my-3">
+                <div class="cp-title">Esmartfactory.net</div>
+                <div class="cp-desc">
+                  The officail website of esmartfactory. Done in WordPress Page
+                  Builder.
+                </div>
+              </div>
+              <div class="cp-footer mt-3">WordPress &#8226; PHP</div>
+            </div>
+          </div>
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="https://www.gsmtmediakit.com/"
+                  target="_blank"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+              <div class="cp-body my-3">
+                <div class="cp-title">GSMTMediakit.com</div>
+                <div class="cp-desc">
+                  Media Website of Global SMT. Done in WordPress Page Builder.
+                </div>
+              </div>
+              <div class="cp-footer mt-3">WordPress &#8226; PHP</div>
+            </div>
+          </div>
+          <!-- mobile applications -->
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="https://play.google.com/store/apps/details?id=ph.com.motorlandia.motorlandiaappfinal"
+                  target="_blank"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+
+              <div class="cp-body my-3">
+                <div class="cp-title">Motorlandia App</div>
+                <div class="cp-desc">
+                  CIDA Motorlandia Official Application. Use to apply and loan
+                  motorcyle in CIDA.
+                </div>
+              </div>
+              <div class="cp-footer mt-3">
+                React Native &#8226; Expo &#8226; JS &#8226; MongoDB
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- github projects -->
+        <div class="row">
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="https://github.com/felcon2857/Simple-Javascript-Arithmetic-"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+              <div class="cp-body my-3">
+                <div class="cp-title">Simple JS Arithmetic</div>
+                <div class="cp-desc">
+                  Simple Javascript Arithmetic for Addition, Subtraction,
+                  Multiplication and Division
+                </div>
+              </div>
+              <div class="cp-footer mt-3">Javascript</div>
+            </div>
+          </div>
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="https://github.com/felcon2857/exp-manager"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+              <div class="cp-body my-3">
+                <div class="cp-title">Expense Manager</div>
+                <div class="cp-desc">
+                  A simple Laravel application that tracks expenses of users.
+                  Wiht user level restrictions.
+                </div>
+              </div>
+              <div class="cp-footer mt-3">
+                Laravel &#8226; Vue JS &#8226; JS &#8226; PHP
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="https://github.com/felcon2857/github-user-api"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+              <div class="cp-body my-3">
+                <div class="cp-title">Github User API</div>
+                <div class="cp-desc">
+                  Backend API to request multiple github user at a time with
+                  caching process.
+                </div>
+              </div>
+              <div class="cp-footer mt-3">
+                Laravel &#8226; Redis &#8226; PHP
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="https://github.com/felcon2857/IOS-Javascript-Calculator"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+              <div class="cp-body my-3">
+                <div class="cp-title">JS IOS Calculator</div>
+                <div class="cp-desc">
+                  JavaScript Simple calculator with the layout of Iphone style
+                  calculator.
+                </div>
+              </div>
+              <div class="cp-footer mt-3">
+                JavaScript &#8226; CSS &#8226; HTML
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 my-2">
+            <div class="card-projects">
+              <div class="cp-header">
+                <div class="icon-header">
+                  <i class="bx bx-folder"></i>
+                </div>
+                <a
+                  class="icon-links"
+                  href="https://github.com/felcon2857/javascript-editor"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+              <div class="cp-body my-3">
+                <div class="cp-title">JavaScript Editor</div>
+                <div class="cp-desc">
+                  JavaScript Simple Editor to perform simple javascript program.
+                </div>
+              </div>
+              <div class="cp-footer mt-3">
+                JavaScript &#8226; CSS &#8226; HTML
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section history -->
+      <section id="history" class="vh-100 my-5 fade-in-bottom">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4 class="page-text">HISTORY</h4>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h5>Profesional Experience and Education</h5>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <!-- work history -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="job-box">
+              <div class="d-flex job-title">
+                <div class="job-indicator"></div>
+                <h4>Junior Website Developer</h4>
+              </div>
+              <div class="job-year">Aug. 2020 - Jan. 2021</div>
+              <div class="job-org mt-3 mb-2">NimbleRhino LLC.</div>
+              <div class="job-list">
+                <ul>
+                  <li>Created the main website of the company NimbleRhino.</li>
+                  <li>
+                    Develop two partner websites of NimbleRhino "NimbleTalentz,
+                    and NimbleClicks".
+                  </li>
+                  <li>
+                    Handle the Domain and Host (Manage Hosting) that serves the
+                    websites of the company and company clients.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="job-box">
+              <div class="d-flex job-title">
+                <div class="job-indicator"></div>
+                <h4>Website Developer</h4>
+              </div>
+              <div class="job-year">Aug. 2020</div>
+              <div class="job-org mt-3 mb-2">Excelsior Creative</div>
+              <div class="job-list">
+                <ul>
+                  <li>Creating Wordpress Website for the company.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="job-box">
+              <div class="d-flex job-title">
+                <div class="job-indicator"></div>
+                <h4>Software Developer</h4>
+              </div>
+              <div class="job-year">Dec. 2019 - Jul. 2020</div>
+              <div class="job-org mt-3 mb-2">CodeBlock21</div>
+              <div class="job-list">
+                <ul>
+                  <li>
+                    Pioneered and Develop a Custom Admin Website and Mobile
+                    Application for Local Car Dealer Company Motorlandia.
+                  </li>
+                  <li>
+                    Develop and Maintained a housing project website for HSS .
+                  </li>
+                  <li>
+                    Designing and Develop a certification website for Cantrel
+                    Solutions.
+                  </li>
+                  <li>
+                    Creating Graphics Design for the websites and PDF portfolio
+                    of the company.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="job-box">
+              <div class="d-flex job-title">
+                <div class="job-indicator"></div>
+                <h4>Website Developer</h4>
+              </div>
+              <div class="job-year">Mar. 2015 - Jan. 2019</div>
+              <div class="job-org mt-3 mb-2">BCJA Solutions</div>
+              <div class="job-list">
+                <ul>
+                  <li>
+                    Develop and Design WordPress Websites for local and
+                    international clients of the company.
+                  </li>
+                  <li>
+                    Designing Banners, Posters, and Email templates for the
+                    company clients.
+                  </li>
+                  <li>
+                    Managing, Troubleshooting, and Maintaining the quality of
+                    service of the website domain, servers, and hosting of the
+                    company and clients.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="job-box">
+              <div class="d-flex job-title">
+                <div class="job-indicator"></div>
+                <h4>Bachelor's Degree in Information Technology</h4>
+              </div>
+              <div class="job-year">2015 - 2019</div>
+              <div class="job-org mt-3 mb-2">
+                Central Philippines State University - CPSU Victorias Campus
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section contacts -->
+      <section id="contacts" class="vh-100 my-5 fade-in-bottom">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4 class="page-text">CONTACT</h4>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h5>Contact Me</h5>
+              <hr />
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="card-projects">
+                  <div class="d-flex align-items-center">
+                    <div class="c-icon">
+                      <i class="bx bx-map"></i>
+                    </div>
+                    <div class="c-label">
+                      <h5>Address</h5>
+                      <div>Negros Occ., Philippines</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card-projects">
+                  <div class="d-flex align-items-center">
+                    <div class="c-icon">
+                      <i class="bx bx-link"></i>
+                    </div>
+                    <div class="c-label">
+                      <h5>Links</h5>
+                      <div class="d-flex align-items-center">
+                        <a
+                          href="https://www.linkedin.com/in/felcon-albaladejo-b60787183/"
+                        >
+                          <i class="bx bxl-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/felcon2857">
+                          <i class="bx bxl-github"></i>
+                        </a>
+                        <a href="https://codepen.io/script2to">
+                          <i class="bx bxl-codepen"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="card-projects">
+                  <div class="d-flex align-items-center">
+                    <div class="c-icon">
+                      <i class="bx bx-envelope"></i>
+                    </div>
+                    <div class="c-label">
+                      <h5>Email</h5>
+                      <div>albaladejofelcon31@gmail.com</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card-projects">
+                  <div class="d-flex align-items-center">
+                    <div class="c-icon">
+                      <i class="bx bx-phone-call"></i>
+                    </div>
+                    <div class="c-label">
+                      <h5>Phone</h5>
+                      <div>+639508414224 / +639153526619</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-projects container">
+              <div class="row">
+                <div class="col-md-6 form-group mt-3">
+                  <input
+                    type="text"
+                    placeholder="Name or company"
+                    class="frm-input"
+                    name="company"
+                    id="company-id"
+                  />
+                </div>
+                <div class="col-md-6 form-group mt-3">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="frm-input"
+                    name="email"
+                    id="email-id"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group mt-3">
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    class="frm-input"
+                    name="subject"
+                    id="subject-id"
+                  />
+                </div>
+              </div>
+              <div class="row my-3 form-group">
+                <div class="col-md-12">
+                  <textarea
+                    name="message"
+                    id="message-id"
+                    cols="30"
+                    rows="10"
+                    placeholder="Message"
+                    class="frm-input"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="text-center">
+                  <button class="btn-send" id="send-mail">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="js/index.js"></script>
+  <script src="js/smtp.js"></script>
+  <script src="lib/bootstrap//js/bootstrap.min.js"></script>
+</html>
